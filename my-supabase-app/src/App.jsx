@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const { data, error } = await supabase.from('prueba').select('*');
+      const { data, error } = await supabase.from('Ingresos').select('*');
 
       console.log(data, error); // Para ver resultados en consola
       if (error) {
